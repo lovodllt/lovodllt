@@ -1,16 +1,38 @@
-## Hi there 👋
+# 学习总结
+终于是做到这里啦
+由于指令太多，这里只记录常用的
 
-<!--
-**lovodllt/lovodllt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## shell
 
-Here are some ideas to get you started:
+### 基本命令
+1. `pwd`: 展示当前路径
+2. `echo`: 打印数据(差不多就是cout，print之类的)  如：echo hello
+3. `cd`: 打开某个文件  注：cd ..可以退回到上一级
+4. `cat`: 执行文件
+5. `mdkir`: 新建文件夹
+6. `touch`: 建立一个文件
+7. `--help`: 查询命令的具体用途
+8. `mv`: 用于移动文件
+9. `rm`: 用于删除文件
+10. `^c`: 停止进程
+11. `^z`: 暂停进程  注：`fg`在前台恢复运行  `bg`在后台恢复进程
+12. `chmod`: 用于修改文件的读，写，运行权限
+13. `grep`: 筛选内容  如：grep txt 可以筛选出包含txt的行
+### 各种符号
+1. `>`: 写入内容 __注意：会覆盖原文件__
+2. `>>`: 追加内容，在文件内容末尾，不影响原文件
+3. `|`: 将一个程序与另一个连接  如：cat hello.txt | grep hello
+4. `*`: 匹配任意字符
+   + `*txt`: 以txt结尾的
+   + `abc*`： 以abc开头的
+   + `*hello*`： 包含hello的
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+## git
+
+###基础命令
+1. `git init`: 新建一个仓库
+2. `git status`： 查看仓库状态
+3. `git add <filename>`: 提交文件到暂存区  注：也可以使用`git add .`提交全部
+4. `git commit`: 提交文件  注：`-m`后写对本次提交的描述
+5. `git log`:显示历史  注：可以添加`--oneline`以简单显示
